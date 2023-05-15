@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body onload="foco()">
+    <fieldset id="formInserir">
+        <legend>Inserir Contas</legend>
+        <label for="fData">Inserir a data: </label>
+        <input type="date" id="fData" name="fData"><br><br>
+
+        <label for="fDescricao">Inserir a descrição da compra: </label>
+        <input type="text" id="fDescricao" name="fDescricao"><br><br>
+
+        <label for="fValor">Inserir o valor: </label>
+        <input type="number" id="fValor" name="fValor" placeholder="50,00"><br><br>
+
+        <input id="botao" type="submit" value="Enviar" onclick="adicionarLinha(event)">
+    </fieldset>
+    <br><br>
+    <table id="tabela">
+        <tr>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Valor</thr>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
